@@ -13,12 +13,18 @@ for(j=1;j<=n;j++)
 scanf("%d",&cost[i][j]);
 }}
 printf("enter nodee to visit");
+scanf("%d",&v);
+printf("Enter path for the selected node");
 scanf("%d",&p);
 printf("enter path matrix\t");
-
 for(i=1;i<=p;i++)
 {
 for(j=1;j<=n;j++)
+{
+scanf("%d",&path[i][j]);
+}
+}
+for(i=1;i<=p;i++)
 {
 distance[i]=0;
 row=1;
@@ -46,4 +52,6 @@ for(i=1;i<=n;i++)
 {
 if(path[index][i]!=0)
 printf("%d",path[index][i]);
-}}}
+}}
+
+
